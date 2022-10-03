@@ -1,7 +1,6 @@
 package br.com.fiap;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
@@ -11,6 +10,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import br.com.fiap.dao.ConnectionFactory;
+
 public class PrimaryController {
     @FXML
     private TextField txtFieldOp;
@@ -18,9 +19,6 @@ public class PrimaryController {
     private Label labelOp;
 
     private int num1;
-    private String url = "jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL";
-    private String user = "";
-    private String password = "";
 
     public void digitarOp(ActionEvent event) {
         Button btn = (Button) event.getSource();
@@ -29,7 +27,7 @@ public class PrimaryController {
     }
 
     public void calc() throws SQLException {
-        Connection con = DriverManager.getConnection(url, user, password);
+        Connection con = ConnectionFactory.getConnection();
         int resultado = 0;
         int num2 = Integer.valueOf(txtFieldOp.getText());
         String op = labelOp.getText() + num2;
@@ -80,7 +78,7 @@ public class PrimaryController {
     }
 
     public void raiz() throws SQLException {
-        Connection con = DriverManager.getConnection(url, user, password);
+        Connection con = ConnectionFactory.getConnection();
         num1 = Integer.valueOf(txtFieldOp.getText());
         String op = String.valueOf(num1);
         int resultado = (int) Math.sqrt(num1);
@@ -96,7 +94,7 @@ public class PrimaryController {
     }
 
     public void quad() throws SQLException {
-        Connection con = DriverManager.getConnection(url, user, password);
+        Connection con = ConnectionFactory.getConnection();
         num1 = Integer.valueOf(txtFieldOp.getText());
         String op = num1 + " * " + num1;
         int resultado = num1 * num1;

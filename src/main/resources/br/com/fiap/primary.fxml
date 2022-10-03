@@ -11,14 +11,13 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fiap.PrimaryController">
    <top>
       <FlowPane alignment="CENTER_RIGHT" columnHalignment="CENTER" prefHeight="88.0" prefWidth="528.0" BorderPane.alignment="CENTER">
          <children>
             <Label fx:id="labelOp" textAlignment="CENTER" textFill="#727272">
                <font>
-                  <Font size="25.0" />
+                  <Font name="Consolas" size="25.0" />
                </font>
                <FlowPane.margin>
                   <Insets right="105.0" />
@@ -26,7 +25,7 @@
             </Label>
             <TextField fx:id="txtFieldOp" editable="false" focusTraversable="false" prefHeight="52.0" prefWidth="371.0" promptText="Equação">
                <font>
-                  <Font size="25.0" />
+                  <Font name="Consolas" size="25.0" />
                </font>
                <FlowPane.margin>
                   <Insets right="40.0" />
@@ -58,20 +57,20 @@
                </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#digitarOp" prefHeight="40.0" prefWidth="80.0" text="8" GridPane.columnIndex="2">
-               <font>
-                  <Font size="20.0" />
-               </font>
                <GridPane.margin>
                   <Insets />
                </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#digitarOp" prefHeight="40.0" prefWidth="80.0" text="9" GridPane.columnIndex="3">
-               <font>
-                  <Font size="20.0" />
-               </font>
                <GridPane.margin>
                   <Insets />
                </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#subtrair" prefHeight="30.0" prefWidth="60.0" text="Sub." GridPane.rowIndex="1">
                <font>
@@ -79,20 +78,20 @@
                </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#digitarOp" prefHeight="40.0" prefWidth="80.0" text="5" GridPane.columnIndex="2" GridPane.rowIndex="1">
-               <font>
-                  <Font size="20.0" />
-               </font>
                <GridPane.margin>
                   <Insets />
                </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#digitarOp" prefHeight="40.0" prefWidth="80.0" text="6" GridPane.columnIndex="3" GridPane.rowIndex="1">
-               <font>
-                  <Font size="20.0" />
-               </font>
                <GridPane.margin>
                   <Insets />
                </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#mult" prefHeight="30.0" prefWidth="60.0" text="Vezes" GridPane.rowIndex="2">
                <font>
@@ -100,28 +99,28 @@
                </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#digitarOp" prefHeight="40.0" prefWidth="80.0" text="2" GridPane.columnIndex="2" GridPane.rowIndex="2">
-               <font>
-                  <Font size="20.0" />
-               </font>
                <GridPane.margin>
                   <Insets />
                </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#digitarOp" prefHeight="40.0" prefWidth="80.0" text="3" GridPane.columnIndex="3" GridPane.rowIndex="2">
-               <font>
-                  <Font size="20.0" />
-               </font>
                <GridPane.margin>
                   <Insets />
                </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#digitarOp" prefHeight="40.0" prefWidth="80.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="3">
-               <font>
-                  <Font size="20.0" />
-               </font>
                <GridPane.margin>
                   <Insets />
                </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#div" prefHeight="30.0" prefWidth="60.0" text="Div." GridPane.rowIndex="3">
                <font>
@@ -129,36 +128,36 @@
                </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#apagar" prefHeight="40.0" prefWidth="80.0" text="C" GridPane.columnIndex="3" GridPane.rowIndex="3">
-               <font>
-                  <Font size="20.0" />
-               </font>
                <GridPane.margin>
                   <Insets />
                </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#digitarOp" prefHeight="40.0" prefWidth="80.0" text="7" GridPane.columnIndex="1">
-               <font>
-                  <Font size="20.0" />
-               </font>
                <GridPane.margin>
                   <Insets />
                </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#digitarOp" prefHeight="40.0" prefWidth="80.0" text="4" GridPane.columnIndex="1" GridPane.rowIndex="1">
-               <font>
-                  <Font size="20.0" />
-               </font>
                <GridPane.margin>
                   <Insets />
                </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#digitarOp" prefHeight="40.0" prefWidth="80.0" text="1" GridPane.columnIndex="1" GridPane.rowIndex="2">
-               <font>
-                  <Font size="20.0" />
-               </font>
                <GridPane.margin>
                   <Insets />
                </GridPane.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#quad" prefHeight="30.0" prefWidth="60.0" text="Quad." GridPane.rowIndex="4">
                <font>
